@@ -1,0 +1,15 @@
+
+if has('vim_starting')
+  filetype plugin off
+  filetype indent off
+  execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
+endif
+call neobundle#rc(expand('~/.vim/bundle'))
+
+NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
+NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'tomasr/molokai'
+
+syntax on
+filetype plugin on
+filetype indent on
