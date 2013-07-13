@@ -8,6 +8,8 @@ call neobundle#rc(expand('~/.vim/bundle'))
 
 NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
 NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'git://github.com/scrooloose/nerdtree.git'
+NeoBundle 'git://github.com/scrooloose/syntastic.git'
 NeoBundle 'tomasr/molokai'
 
 syntax on

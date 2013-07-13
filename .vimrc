@@ -16,11 +16,11 @@ source ~/dotfiles/.vimrc.completion
 "検索関連
 source ~/dotfiles/.vimrc.search
 "移動関連
-"source ~/dotfiles/.vimrc.moving
+source ~/dotfiles/.vimrc.moving
 "Color関連
 source ~/dotfiles/.vimrc.colors
 "編集関連
-"source ~/dotfiles/.vimrc.editing
+source ~/dotfiles/.vimrc.editing
 "エンコーディング関連
 source ~/dotfiles/.vimrc.encoding
 "その他
