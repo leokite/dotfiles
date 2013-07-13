@@ -38,3 +38,6 @@ set helpfile=$VIMRUNTIME/doc/help.txt
 
 " ファイルタイプ判定をon
 filetype plugin on
+
+" <Leader>が効かなかったので","にした
+let mapleader = ','

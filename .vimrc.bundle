@@ -20,6 +20,18 @@ NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'git://github.com/scrooloose/nerdtree.git'
 " シンタックス
 NeoBundle 'git://github.com/scrooloose/syntastic.git'
+" コメント処理
+NeoBundle 'scrooloose/nerdcommenter.git'
+" Unite
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'tsukkee/unite-help'
+NeoBundle 'h1mesuke/unite-outline'
+NeoBundle 'basyura/unite-rails'
+NeoBundle 'thinca/vim-unite-history'
+NeoBundle 'tsukkee/unite-tag'
+NeoBundle 'choplin/unite-vim_hacks'
+
+
 
 " Color Scheme
 NeoBundle 'tomasr/molokai'
