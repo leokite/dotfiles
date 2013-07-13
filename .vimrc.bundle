@@ -6,10 +6,22 @@ if has('vim_starting')
 endif
 call neobundle#rc(expand('~/.vim/bundle'))
 
+" Vimのプラグイン管理
 NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
+" Markdown
+NeoBundle 'git://github.com/plasticboy/vim-markdown.git'
+" 編集中のファイルを簡単に実行できるプラグイン
+NeoBundle 'thinca/vim-quickrun'
+" open-browser.vim : カーソルの下のURLを開くor単語を検索エンジンで検索
+NeoBundle 'tyru/open-browser.vim'
+" ステータスラインをかっこ良くするプラグイン
 NeoBundle 'Lokaltog/vim-powerline'
+" ツリー型エクスプローラ
 NeoBundle 'git://github.com/scrooloose/nerdtree.git'
+" シンタックス
 NeoBundle 'git://github.com/scrooloose/syntastic.git'
+
+" Color Scheme
 NeoBundle 'tomasr/molokai'
 
 syntax on
