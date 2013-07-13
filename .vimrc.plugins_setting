@@ -47,7 +47,7 @@ nmap    f [unite]
 " 分割しないでuniteのbufferを表示する
 nnoremap [unite]u  :<C-u>Unite -no-split<Space>
 " 全部乗せ
-nnoremap <silent> [unite]a  :<C-u>UniteWithCurrentDir -no-split buffer-name=files buffer file_mru bookmark file<CR>
+nnoremap <silent> [unite]a  :<C-u>UniteWithCurrentDir -no-split -buffer-name=files buffer file_mru bookmark file<CR>
 " ファイル一覧
 nnoremap <silent> [unite]f  :<C-u>Unite -no-split -buffer-name=files file<CR>
 " バッファ一覧
