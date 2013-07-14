@@ -1,6 +1,5 @@
 export LANG=ja_JP.UTF-8
 
-# Node
 export PATH=$HOME/.nodebrew/current/bin:~/bin:$PATH
 
 # Vim
@@ -8,6 +7,15 @@ export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias e='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+
+# tmux
+alias tmux='tmuxx'
+alias tm='tmuxx'
+alias tma='tmux attach'
+alias tml='tmux list-window'
+
+# Ctags
+alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
 
 # Sublime Text2
 #export EDITOR='subl -w'
