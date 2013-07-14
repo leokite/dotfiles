@@ -8,6 +8,8 @@ call neobundle#rc(expand('~/.vim/bundle'))
 
 " Vimのプラグイン管理
 NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
+" Surround.vim
+NeoBundle 'tpope/vim-surround'
 " Markdown
 NeoBundle 'git://github.com/plasticboy/vim-markdown.git'
 " 編集中のファイルを簡単に実行できるプラグイン
@@ -30,6 +32,9 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'thinca/vim-unite-history'
 NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'choplin/unite-vim_hacks'
+
+" ソースコード上のメソッド宣言、変数宣言の一覧を表示
+NeoBundle 'taglist.vim'
 
 
 

@@ -42,7 +42,7 @@ vmap ,, <Plug>NERDCommenterToggle
 ""未対応ファイルタイプのエラーメッセージを表示しない
 let NERDShutUp=1
 nnoremap    [unite]   <Nop>
-nmap    f [unite]
+nmap    <Leader>f [unite]
 
 " 分割しないでuniteのbufferを表示する
 nnoremap [unite]u  :<C-u>Unite -no-split<Space>
@@ -58,3 +58,16 @@ nnoremap <silent> [unite]u  :<C-u>Unite -no-split buffer file_mru<CR>
 nnoremap <silent> [unite]m  :<C-u>Unite -no-split file_mru<CR>
 " 現在のバッファのカレントディレクトリからファイル一覧
 nnoremap <silent> [unite]d  :<C-u>UniteWithBufferDir -no-split file<CR>
+
+
+"------------------------------------
+""Taglist-vim
+"------------------------------------
+set tags=tags
+" 現在表示中のファイルのみのタグしか表示しない
+let Tlist_Show_One_File = 1
+" 右側にtag listのウインドうを表示する
+let Tlist_Use_Right_Window = 1
+" taglistのウインドウだけならVimを閉じる
+let Tlist_Exit_OnlyWindow = 1
+map <silent> <leader>l :TlistToggle<CR>
