@@ -36,10 +36,13 @@ NeoBundle 'choplin/unite-vim_hacks'
 " ソースコード上のメソッド宣言、変数宣言の一覧を表示
 NeoBundle 'taglist.vim'
 
-
+" 高速grep
+NeoBundle 'ack.vim'
 
 " Color Scheme
 NeoBundle 'tomasr/molokai'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'nanotech/jellybeans.vim'
 
 syntax on
 filetype plugin on
