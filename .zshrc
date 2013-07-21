@@ -119,18 +119,19 @@ function git-current-branch {
   if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
     color=%F{green}
   else
-     color=%F{yellow}
+    color=%F{magenta}
+    #color=%F{yellow}
   fi
   #echo "$color$name$action%f%b"
   echo "[%{$color%}$name$action%f]"
 }
 
 PROMPT='
-%{${fg[yellow]}%}%~%{${reset_color}%}
+%{${fg[yellow]}%}%~%{${reset_color}%} `git-current-branch``git_prompt_stash_count`
 [%n@${HOST%%.*}]✔ '
 PROMPT2='[%n]> '
 #RPROMPT='`git-current-branch``git_prompt_stash_count``git_prompt_status`'
-RPROMPT='`git-current-branch``git_prompt_stash_count`'
+#RPROMPT='`git-current-branch``git_prompt_stash_count`'
 
 case "${TERM}" in
 kterm*|xterm*)
