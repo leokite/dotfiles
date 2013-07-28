@@ -2,11 +2,19 @@
 " カラー関連 Colors
 "-------------------------------------------------------------------------------
 
-"colorscheme molokai
+colorscheme molokai
 "colorscheme jellybeans
-colorscheme solarized
-set background=dark
+"colorscheme solarized
+"set background=dark
+"set t_Co=256
 "let g:solarized_termcolors=256
+"let g:solarized_degrade=0
+"let g:solarized_bold=1
+"let g:solarized_underline=1
+"let g:solarized_italic=1
+"let g:solarized_termtrans=1
+"let g:solarized_contrast="high"
+"let g:solarized_visibility="high"
 
 " ターミナルタイプによるカラー設定
 if &term =~ "xterm-256color" || "screen-256color"

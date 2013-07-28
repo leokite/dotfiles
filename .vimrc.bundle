@@ -10,8 +10,6 @@ call neobundle#rc(expand('~/.vim/bundle'))
 NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
 " Surround.vim
 NeoBundle 'tpope/vim-surround'
-" Markdown
-NeoBundle 'git://github.com/plasticboy/vim-markdown.git'
 " 編集中のファイルを簡単に実行できるプラグイン
 NeoBundle 'thinca/vim-quickrun'
 " open-browser.vim : カーソルの下のURLを開くor単語を検索エンジンで検索
@@ -22,6 +20,9 @@ NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'git://github.com/scrooloose/nerdtree.git'
 " シンタックス
 NeoBundle 'git://github.com/scrooloose/syntastic.git'
+NeoBundle 'jQuery'
+NeoBundle 'JavaScript-syntax'
+NeoBundle 'git://github.com/plasticboy/vim-markdown.git'
 " コメント処理
 NeoBundle 'scrooloose/nerdcommenter.git'
 " Unite
@@ -35,6 +36,9 @@ NeoBundle 'choplin/unite-vim_hacks'
 
 " ソースコード上のメソッド宣言、変数宣言の一覧を表示
 NeoBundle 'taglist.vim'
+
+" vimでgitを操作する
+NeoBundle 'tpope/vim-fugitive'
 
 " 高速grep
 NeoBundle 'ack.vim'

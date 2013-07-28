@@ -119,8 +119,8 @@ function git-current-branch {
   if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
     color=%F{green}
   else
-    color=%F{magenta}
-    #color=%F{yellow}
+    #color=%F{magenta}
+    color=%F{yellow}
   fi
   #echo "$color$name$action%f%b"
   echo "[%{$color%}$name$action%f]"

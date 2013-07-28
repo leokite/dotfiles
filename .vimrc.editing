@@ -13,7 +13,7 @@ inoremap <silent> jj <ESC>
 set expandtab
 
 " コンマの後に自動的にスペースを挿入
-inoremap , ,<Space>
+"inoremap , ,<Space>
 " XMLの閉タグを自動挿入
 augroup MyXML
   autocmd!
