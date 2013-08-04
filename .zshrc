@@ -3,10 +3,10 @@ export LANG=ja_JP.UTF-8
 export PATH=$HOME/.nodebrew/current/bin:~/bin:$PATH
 
 # Vim
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias e='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+#export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+#alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+#alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+#alias e='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
 # tmux
 alias tmux='tmuxx'
@@ -45,8 +45,10 @@ setopt correct
 
 autoload predict-on
 predict-on
-autoload -U compinit
-compinit
+# zsh completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+autoload -Uz compinit
+compinit -u
 
 autoload colors
 colors
@@ -119,8 +121,8 @@ function git-current-branch {
   if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
     color=%F{green}
   else
-    #color=%F{magenta}
-    color=%F{yellow}
+    color=%F{magenta}
+    #color=%F{yellow}
   fi
   #echo "$color$name$action%f%b"
   echo "[%{$color%}$name$action%f]"
@@ -164,3 +166,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
