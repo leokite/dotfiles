@@ -35,14 +35,21 @@ setopt pushd_ignore_dups
 # コマンドのスペルチェックをする
 setopt correct
 # 先方予測機能を有効にする
-autoload predict-on
-predict-on
+#autoload predict-on
+#predict-on
 
 # zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 # 補完機能を有効にする
 autoload -Uz compinit
 compinit -u
+
+# Z
+_Z_CMD=j
+source ~/z/z.sh
+precmd() {
+      _z --add "$(pwd -P)"
+}
 
 # alias
 source $HOME/.zshrc.alias
