@@ -10,6 +10,10 @@ done
 # install oh-my-zsh
 [! -d ~/.oh-my-zsh ] && git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
+# install z
+cd $HOME
+git clone https://github.com/rupa/z.git
+
 # install Neobundle
 mkdir -p ~/.vim/bundle
 git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
