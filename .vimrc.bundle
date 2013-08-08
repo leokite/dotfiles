@@ -7,7 +7,7 @@ endif
 call neobundle#rc(expand('~/.vim/bundle'))
 
 " Vimのプラグイン管理
-NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
+NeoBundle 'https//github.com/Shougo/neobundle.vim.git'
 " Surround.vim
 NeoBundle 'tpope/vim-surround'
 " 編集中のファイルを簡単に実行できるプラグイン
@@ -17,12 +17,12 @@ NeoBundle 'tyru/open-browser.vim'
 " ステータスラインをかっこ良くするプラグイン
 NeoBundle 'Lokaltog/vim-powerline'
 " ツリー型エクスプローラ
-NeoBundle 'git://github.com/scrooloose/nerdtree.git'
+NeoBundle 'https//github.com/scrooloose/nerdtree.git'
 " シンタックス
-NeoBundle 'git://github.com/scrooloose/syntastic.git'
+NeoBundle 'https//github.com/scrooloose/syntastic.git'
 NeoBundle 'jQuery'
 NeoBundle 'JavaScript-syntax'
-NeoBundle 'git://github.com/plasticboy/vim-markdown.git'
+NeoBundle 'https//github.com/plasticboy/vim-markdown.git'
 " コメント処理
 NeoBundle 'scrooloose/nerdcommenter.git'
 " Unite
