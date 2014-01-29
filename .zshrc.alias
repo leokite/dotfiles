@@ -12,3 +12,7 @@ alias ll='ls -l'
 
 # git
 alias git='nocorrect git'
+
+# grunt
+alias grunt='nocorrect grunt'
+

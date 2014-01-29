@@ -1,4 +1,4 @@
-" 改行時に自動でコメント合うとするのを解除
+" 改行時に自動でコメントアウトするのを解除
 autocmd FileType * setlocal formatoptions-=ro
 " insertモード抜けるとIMEオフ
 set noimdisable

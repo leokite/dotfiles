@@ -17,12 +17,14 @@ NeoBundle 'tyru/open-browser.vim'
 " ステータスラインをかっこ良くするプラグイン
 NeoBundle 'Lokaltog/vim-powerline'
 " ツリー型エクスプローラ
-NeoBundle 'https//github.com/scrooloose/nerdtree.git'
+NeoBundle 'scrooloose/nerdtree.git'
 " シンタックス
-NeoBundle 'https//github.com/scrooloose/syntastic.git'
+NeoBundle 'scrooloose/syntastic.git'
 NeoBundle 'jQuery'
 NeoBundle 'JavaScript-syntax'
-NeoBundle 'https//github.com/plasticboy/vim-markdown.git'
+NeoBundle 'plasticboy/vim-markdown.git'
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'kchmck/vim-coffee-script'
 " コメント処理
 NeoBundle 'scrooloose/nerdcommenter.git'
 " Unite

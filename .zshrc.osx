@@ -6,6 +6,12 @@ export PATH=$HOME/.nodebrew/current/bin:~/bin:$PATH
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# scala
+export PATH=~/dev/lib/scala-2.10.3/bin:$PATH
+
+# play2
+export PATH=~/dev/lib/play-2.2.1/:$PATH
+
 # RVM
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
