@@ -28,11 +28,11 @@ let g:syntastic_enable_highlighting=1
 "" NERDTree
 "----------------------------------------
 ""<C-e>でNERDTreeをオンオフ。
-nmap <silent> <C-e> :NERDTreeToggle<CR>
-vmap <silent> <C-e> <Esc>:NERDTreeToggle<CR>
-omap <silent> <C-e> :NERDTreeToggle<CR>
-imap <silent> <C-e> <Esc>:NERDTreeToggle<CR>
-cmap <silent> <C-e> <C-u>:NERDTreeToggle<CR>
+nmap <silent> <C-e> ;NERDTreeToggle<CR>
+vmap <silent> <C-e> <Esc>;NERDTreeToggle<CR>
+omap <silent> <C-e> ;NERDTreeToggle<CR>
+imap <silent> <C-e> <Esc>;NERDTreeToggle<CR>
+cmap <silent> <C-e> <C-u>;NERDTreeToggle<CR>
 
 "------------------------------------
 " NERD_commenter.vim
@@ -45,6 +45,7 @@ vmap ,, <Plug>NERDCommenterToggle
 ""未対応ファイルタイプのエラーメッセージを表示しない
 let NERDShutUp=1
 nnoremap    [unite]   <Nop>
+" カンマの後にfを押すと[unite]になる
 nmap    <Leader>f [unite]
 
 " 分割しないでuniteのbufferを表示する
