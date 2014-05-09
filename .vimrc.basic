@@ -25,9 +25,9 @@ set mouse=a
 set guioptions+=a
 set ttymouse=xterm2
 
-"ヤンクした文字は、システムのクリップボードに入れる"
+"ヤンクした文字は、システムのクリップボードに入れる
 set clipboard=unnamed
-" 挿入モードでCtrl+pを押すとクリップボードの内容を貼り付けられるようにする "
+" 挿入モードでCtrl+pを押すとクリップボードの内容を貼り付けられるようにする
 imap <C-p>  <ESC>"*pa
 
 " Ev/Rvでvimrcの編集と反映
@@ -39,5 +39,5 @@ set helpfile=$VIMRUNTIME/doc/help.txt
 " ファイルタイプ判定をon
 filetype plugin on
 
-" <Leader>が効かなかったので","にした
+" <Leader>を","にする
 let mapleader = ','

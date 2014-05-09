@@ -12,6 +12,12 @@ export PATH=~/dev/lib/scala-2.10.3/bin:$PATH
 # play2
 export PATH=~/dev/lib/play-2.2.1/:$PATH
 
+# tomcat
+export CATALINE_HOME='/usr/local/Cellar/tomcat/7.0.53/libexec'
+
+# java
+export JAVA_OPTS='-Dfile.encoding=UTF-8'
+
 # RVM
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin

@@ -13,6 +13,7 @@ match ZenkakuSpace /　/
 
 " カーソル行をハイライト
 set cursorline
+
 " カレントウィンドウにのみ罫線を引く
 augroup cch
   autocmd! cch
@@ -26,5 +27,6 @@ highlight CursorLine ctermbg=black guibg=black
 
 " コマンド実行中は再描画しない
 set lazyredraw
+
 " 高速ターミナル接続を行う
 set ttyfast

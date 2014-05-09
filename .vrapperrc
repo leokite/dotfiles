@@ -36,6 +36,9 @@ nnoremap gb :GoLastEditPosition<C-m>
 nnoremap [ %
 nnoremap ] %
 
+" grで左tab, gtで右tabへ
+nnoremap gr gT
+
 
 "次のメンバ(フィールド,メソッド)
 eclipseaction GoNextMember org.eclipse.jdt.ui.edit.text.java.goto.next.member
