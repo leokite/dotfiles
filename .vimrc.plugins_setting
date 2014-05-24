@@ -81,3 +81,32 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Exit_OnlyWindow = 1
 map <silent> <leader>l :TlistToggle<CR>
 
+
+"------------------------------------
+" Previm
+"------------------------------------
+augroup PrevimSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
+
+
+"------------------------------------
+" qfixapp
+"------------------------------------
+set runtimepath+=~/qfixapp
+let QFixHown_Key = 'g'
+
+let howm_dir = '~/Dropbox/howm'
+let howm_filename = '%Y/%m/%Y-%m-%d-%H%M%S.md'
+let howm_fileencoding = 'utf-8'
+let howm_fileformat = 'unix'
+
+let QFixWin_EnableMode = 1
+let QFix_UseLocationList = 1
+
+let QFixHowm_FileType = 'markdown'
+let QFixHowm_Title = '#'
+set timeout timeoutlen=3000 ttimeoutlen=100
+
+

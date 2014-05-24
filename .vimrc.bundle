@@ -45,6 +45,9 @@ NeoBundle 'tpope/vim-fugitive'
 " 高速grep
 NeoBundle 'ack.vim'
 
+" Markdownプレビュー
+NeoBundle 'kannokanno/previm'
+
 " Color Scheme
 NeoBundle 'tomasr/molokai'
 NeoBundle 'altercation/vim-colors-solarized'
