@@ -48,6 +48,9 @@ NeoBundle 'ack.vim'
 " Markdownプレビュー
 NeoBundle 'kannokanno/previm'
 
+" QFixHowm
+NeoBundle 'fuenor/qfixhowm'
+
 " Color Scheme
 NeoBundle 'tomasr/molokai'
 NeoBundle 'altercation/vim-colors-solarized'

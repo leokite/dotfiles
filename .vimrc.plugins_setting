@@ -94,7 +94,7 @@ augroup END
 "------------------------------------
 " qfixapp
 "------------------------------------
-set runtimepath+=~/qfixapp
+set runtimepath+=~/.vim/bundle/qfixhowm
 let QFixHown_Key = 'g'
 
 let howm_dir = '~/Dropbox/howm'
@@ -104,9 +104,22 @@ let howm_fileformat = 'unix'
 
 let QFixWin_EnableMode = 1
 let QFix_UseLocationList = 1
+let QFixHowm_MenuPreview = 1
 
 let QFixHowm_FileType = 'markdown'
 let QFixHowm_Title = '#'
 set timeout timeoutlen=3000 ttimeoutlen=100
+
+let calendar_jp = 0
+" 全エントリ一覧表示(,a)でキャッシュを使用しない
+let QFixHowm_TitleListCache = 0
+" 新規エントリーのテンプレート
+let QFixHowm_Template = [
+ \"#%TAG%",
+ \""
+\]
+" エントリーのタイムスタンプを更新日時にする
+let QFixHowm_SaveTime = 2
+
 
 
