@@ -85,10 +85,7 @@ map <silent> <leader>l :TlistToggle<CR>
 "------------------------------------
 " Previm
 "------------------------------------
-augroup PrevimSettings
-  autocmd!
-  autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
-augroup END
+autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 
 
 "------------------------------------
