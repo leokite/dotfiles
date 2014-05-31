@@ -1,23 +1,33 @@
-
+" Vim起動時の処理
 if has('vim_starting')
+  " プラグインの自動読み込みOFF
   filetype plugin off
+  " ファイルタイプ用のインデント設定自動読み込みOFF
   filetype indent off
+  " runtimepathにneobundleを加える
   execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
 endif
+" NeoBundleの初期化
 call neobundle#rc(expand('~/.vim/bundle'))
 
 " Vimのプラグイン管理
 NeoBundle 'https//github.com/Shougo/neobundle.vim.git'
+
 " Surround.vim
 NeoBundle 'tpope/vim-surround'
+
 " 編集中のファイルを簡単に実行できるプラグイン
 NeoBundle 'thinca/vim-quickrun'
+
 " open-browser.vim : カーソルの下のURLを開くor単語を検索エンジンで検索
 NeoBundle 'tyru/open-browser.vim'
+
 " ステータスラインをかっこ良くするプラグイン
 NeoBundle 'Lokaltog/vim-powerline'
+
 " ツリー型エクスプローラ
 NeoBundle 'scrooloose/nerdtree.git'
+
 " シンタックス
 NeoBundle 'scrooloose/syntastic.git'
 NeoBundle 'jQuery'
@@ -25,8 +35,10 @@ NeoBundle 'JavaScript-syntax'
 NeoBundle 'plasticboy/vim-markdown.git'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'kchmck/vim-coffee-script'
+
 " コメント処理
 NeoBundle 'scrooloose/nerdcommenter.git'
+
 " Unite
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'tsukkee/unite-help'
@@ -36,7 +48,7 @@ NeoBundle 'thinca/vim-unite-history'
 NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'choplin/unite-vim_hacks'
 
-" ソースコード上のメソッド宣言、変数宣言の一覧を表示
+" ソースコード上のメソッド宣言、変数宣言の一覧を表示 要ctagsインストール
 NeoBundle 'taglist.vim'
 
 " vimでgitを操作する
@@ -56,6 +68,7 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'nanotech/jellybeans.vim'
 
+"プラグイン読み込み完了したので以下の設定を有効化
 syntax on
 filetype plugin on
 filetype indent on

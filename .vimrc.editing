@@ -19,6 +19,7 @@ set expandtab
 augroup MyXML
   autocmd!
   autocmd Filetype xml inoremap <buffer> </ </<C-x><C-o>
+  autocmd Filetype html inoremap <buffer> </ </<C-x><C-o>
 augroup END
 
 " 保存時に行末の空白を除去する
