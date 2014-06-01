@@ -9,8 +9,7 @@ set display=uhex      " 印字不可能文字を16進数で表示
 
 " 全角スペースの表示
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
-
-match ZenkakuSpace /　/
+au BufRead,BufNew * match ZenkakuSpace /　/
 
 " カーソル行をハイライト
 set cursorline
@@ -31,3 +30,6 @@ set lazyredraw
 
 " 高速ターミナル接続を行う
 set ttyfast
+
+" Markdownでアンダーバーがあるとそれ以降が反転表示されるので無効化する
+autocmd FileType markdown hi! def link markdownitalic Normal

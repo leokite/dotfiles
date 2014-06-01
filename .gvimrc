@@ -8,6 +8,6 @@ endif
 
 " 全角スペースの表示
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
-match ZenkakuSpace /　/
+au BufRead,BufNew * match ZenkakuSpace /　/
 
 set autoindent
