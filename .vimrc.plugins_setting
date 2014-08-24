@@ -148,7 +148,16 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 " -入力による候補番号の表示
 let g:neocomplcache_enable_quick_match = 1
 " 補完候補の一番先頭を選択状態にする(AutoComplPopと似た動作)
-let g:neocomplcache_enable_auto_select = 1
+" let g:neocomplcache_enable_auto_select = 1
+" ポップアップ削除 enable_auto_selectを有効にした場合、これを指定しないと補完
+" が誤爆する
+" inoremap <expr><C-h> neocomplcache#smart_close_popup().”\<C-h>”
+" C-nでneocomplcache補完
+" inoremap <expr><C-n>  pumvisible() ? "\<C-n>" : "\<C-x>\<C-u>\<C-p>"
+" C-pでkeyword補完
+" inoremap <expr><C-p> pumvisible() ? "\<C-p>" : "\<C-p>\<C-n>"
+" 補完候補が出ていたら確定、なければ改行
+" inoremap <expr><CR>  pumvisible() ? neocomplcache#close_popup() : "<CR>"
 "ポップアップメニューで表示される候補の数。初期値は100
 let g:neocomplcache_max_list = 20
 " ユーザー定義スニペット保存ディレクトリ
