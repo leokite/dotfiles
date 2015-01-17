@@ -7,7 +7,7 @@ if has('multi_byte_ime') || has('xim')
 endif
 
 " 全角スペースの表示
-highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
-au BufRead,BufNew * match ZenkakuSpace /　/
+" highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
+" au BufRead,BufNew * match ZenkakuSpace /　/
 
 set autoindent

@@ -30,3 +30,6 @@ autocmd BufWritePre * :%s/\t/  /ge
 "Ctrl-vで貼付けても階段状にしない
 set pastetoggle=<C-E>
 
+";qでHTMLをJavaScript文字列に変換 ;hで変換を元に戻す
+vmap <silent> :h ;s?^\(\s*\)+ '\([^']\+\)',*\s*$?\1\2?g<CR>
+vmap <silent> :q ;s?^\(\s*\)\(.*\)\s*$? \1 + '\2'?<CR>
