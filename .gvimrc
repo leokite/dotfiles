@@ -1,4 +1,5 @@
 colorscheme molokai
+" colorscheme solarized
 
 " IMEがONかOFFかでカーソル色を変える
 if has('multi_byte_ime') || has('xim')
