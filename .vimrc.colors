@@ -1,8 +1,13 @@
 "-------------------------------------------------------------------------------
 " カラー関連 Colors
 "-------------------------------------------------------------------------------
-
-colorscheme molokai
+let scheme = 'molokai'
+augroup guicolorscheme
+  autocmd!
+  execute 'autocmd GUIEnter * colorscheme' scheme
+augroup END
+execute 'colorscheme' scheme
+"colorscheme molokai
 "colorscheme jellybeans
 "colorscheme solarized
 "set background=dark
