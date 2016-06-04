@@ -8,7 +8,8 @@ if has('vim_starting')
   execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
 endif
 " NeoBundleの初期化
-call neobundle#rc(expand('~/.vim/bundle'))
+" call neobundle#rc(expand('~/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle'))
 
 " Vimのプラグイン管理
 NeoBundle 'https//github.com/Shougo/neobundle.vim.git'
@@ -78,6 +79,8 @@ NeoBundle 'junegunn/vim-easy-align'
 
 " カラーコードをその色でハイライト
 NeoBundle 'lilydjwg/colorizer'
+
+call neobundle#end()
 
 "プラグイン読み込み完了したので以下の設定を有効化
 syntax on
