@@ -24,7 +24,9 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tyru/open-browser.vim'
 
 " ステータスラインをかっこ良くするプラグイン
-NeoBundle 'Lokaltog/vim-powerline'
+" NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'itchyny/lightline.vim'
+
 
 " ツリー型エクスプローラ
 NeoBundle 'scrooloose/nerdtree.git'
