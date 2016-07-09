@@ -1,4 +1,4 @@
-" colorscheme molokai
+colorscheme molokai
 " colorscheme solarized
 
 " IMEがONかOFFかでカーソル色を変える

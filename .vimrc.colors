@@ -1,13 +1,15 @@
 "-------------------------------------------------------------------------------
 " カラー関連 Colors
 "-------------------------------------------------------------------------------
-let scheme = 'molokai'
-augroup guicolorscheme
-  autocmd!
-  execute 'autocmd GUIEnter * colorscheme' scheme
-augroup END
-execute 'colorscheme' scheme
-"colorscheme molokai
+" MacVimでカラーがおかしくなるので以下の記載をしたが
+" gvimrcの設定が読み込まれなくなったようなのでコメントアウトする
+" let scheme = 'molokai'
+" augroup guicolorscheme
+  " autocmd!
+  " execute 'autocmd GUIEnter * colorscheme' scheme
+" augroup END
+" execute 'colorscheme' scheme
+colorscheme molokai
 "colorscheme jellybeans
 "colorscheme solarized
 "set background=dark

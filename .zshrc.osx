@@ -16,11 +16,11 @@ export PATH=~/dev/lib/play-2.2.1/:$PATH
 export CATALINE_HOME='/usr/local/Cellar/tomcat/7.0.53/libexec'
 
 # java
-export JAVA_HOME='/Library/java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home'
+export JAVA_HOME='/Library/java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home'
 export JAVA_OPTS='-Dfile.encoding=UTF-8'
 
 # maven
-export M3_HOME=/usr/local/apache-maven-3.2.5
+export M3_HOME=/usr/local/Cellar/maven31/3.1.1/libexec
 M3=$M3_HOME/bin
 export PATH=$M3:$PATH
 
