@@ -63,4 +63,8 @@ darwin*)
 linux*)
     [ -f ~/dotfiles/.zshrc.linux ] && source ~/dotfiles/.zshrc.linux
     ;;
+# Cygwin
+cygwin*)
+    [ -f ~/dotfiles/.zshrc.cygwin ] && source ~/dotfiles/.zshrc.cygwin
+    ;;
 esac

@@ -127,4 +127,10 @@ let QFixHowm_Template = [
 let QFixHowm_SaveTime = 2
 
 
+"------------------------------------
+" vim-easy-align
+"------------------------------------
+vmap <Enter> <Plug>(EasyAlign)
+
+
 

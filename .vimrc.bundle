@@ -8,7 +8,9 @@ if has('vim_starting')
   execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
 endif
 " NeoBundleの初期化
-call neobundle#rc(expand('~/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+call neobundle#end()
 
 " Vimのプラグイン管理
 NeoBundle 'https//github.com/Shougo/neobundle.vim.git'
@@ -47,9 +49,10 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'thinca/vim-unite-history'
 NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'choplin/unite-vim_hacks'
+NeoBundle 'Shougo/neomru.vim'
 
 " ソースコード上のメソッド宣言、変数宣言の一覧を表示 要ctagsインストール
-NeoBundle 'taglist.vim'
+" NeoBundle 'taglist.vim'
 
 " vimでgitを操作する
 NeoBundle 'tpope/vim-fugitive'
@@ -67,6 +70,9 @@ NeoBundle 'fuenor/qfixhowm'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'nanotech/jellybeans.vim'
+
+" Align
+NeoBundle 'junegunn/vim-easy-align'
 
 "プラグイン読み込み完了したので以下の設定を有効化
 syntax on

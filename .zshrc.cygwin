@@ -1,0 +1,2 @@
+# export SHELLOPTS=igncr # CRを無視する
+export TERM=xterm-256color # ckから起動するとxtermになるのでここで変えとく。このやり方が正しいか微妙。
