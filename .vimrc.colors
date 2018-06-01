@@ -1,7 +1,14 @@
 "-------------------------------------------------------------------------------
 " カラー関連 Colors
 "-------------------------------------------------------------------------------
-
+" MacVimでカラーがおかしくなるので以下の記載をしたが
+" gvimrcの設定が読み込まれなくなったようなのでコメントアウトする
+" let scheme = 'molokai'
+" augroup guicolorscheme
+  " autocmd!
+  " execute 'autocmd GUIEnter * colorscheme' scheme
+" augroup END
+" execute 'colorscheme' scheme
 colorscheme molokai
 "colorscheme jellybeans
 "colorscheme solarized
@@ -32,9 +39,9 @@ elseif &term =~ "xterm-color"
 endif
 
 "ポップアップメニューのカラーを設定
-"hi Pmenu guibg=#666666
-"hi PmenuSel guibg=#8cd0d3 guifg=#666666
-"hi PmenuSbar guibg=#333333
+" hi Pmenu guibg=#666666
+" hi PmenuSel guibg=#8cd0d3 guifg=#666666
+" hi PmenuSbar guibg=#333333
 
 " ハイライト on
 syntax enable
