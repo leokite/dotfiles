@@ -50,6 +50,7 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'thinca/vim-unite-history'
 NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'choplin/unite-vim_hacks'
+NeoBundle 'Shougo/neomru.vim'
 
 " ソースコード上のメソッド宣言、変数宣言の一覧を表示 要ctagsインストール
 NeoBundle 'taglist.vim'
@@ -61,7 +62,8 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ack.vim'
 
 " Markdownプレビュー
-NeoBundle 'kannokanno/previm'
+"NeoBundle 'kannokanno/previm'
+NeoBundle 'kazuph/previm', 'feature/add-plantuml-plugin'
 
 " QFixHowm
 NeoBundle 'fuenor/qfixhowm'

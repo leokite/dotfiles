@@ -1,8 +1,8 @@
 # tmux
-alias tmux='tmuxx'
-alias tm='tmuxx'
-alias tma='tmux attach'
-alias tml='tmux list-window'
+# alias tmux='tmuxx'
+# alias tm='tmuxx'
+# alias tma='tmux attach'
+# alias tml='tmux list-window'
 
 # ls
 alias la='ls -a'

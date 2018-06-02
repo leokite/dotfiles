@@ -19,10 +19,18 @@ export CATALINE_HOME='/usr/local/Cellar/tomcat/7.0.53/libexec'
 export JAVA_HOME='/Library/java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home'
 export JAVA_OPTS='-Dfile.encoding=UTF-8'
 
+# ant
+export ANT_HOME='/usr/local/bin/ant'
+
 # maven
-export M3_HOME=/usr/local/Cellar/maven31/3.1.1/libexec
+export M3_HOME=/usr/local/Cellar/maven/3.5.2/libexec
 M3=$M3_HOME/bin
 export PATH=$M3:$PATH
+
+# Python
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+eval "$(pyenv init -)"
 
 # RVM
 # Add RVM to PATH for scripting
