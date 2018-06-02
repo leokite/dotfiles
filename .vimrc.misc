@@ -1,3 +1,7 @@
 " ;でコマンド入力（;と:を入れ替え）
 noremap ; :
 noremap : ;
+
+" XMLを整形する
+command Formatxml :%s/></>\r</g | filetype indent on | setf xml | normal gg=G
+

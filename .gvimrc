@@ -12,3 +12,7 @@ endif
 " au BufRead,BufNew * match ZenkakuSpace /　/
 
 set autoindent
+
+" 半透明化
+" gui
+" set transparency=0
