@@ -72,7 +72,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ack.vim'
 
 " Markdownプレビュー
+<<<<<<< HEAD
 Plugin 'kannokanno/previm'
+=======
+"NeoBundle 'kannokanno/previm'
+NeoBundle 'kazuph/previm', 'feature/add-plantuml-plugin'
+>>>>>>> 789db95704f8845c86416b184a6d7328e73b4526
 
 " QFixHowm
 Plugin 'fuenor/qfixhowm'
