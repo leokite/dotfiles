@@ -33,7 +33,6 @@ vmap <silent> <C-e> <Esc>;NERDTreeToggle<CR>
 omap <silent> <C-e> ;NERDTreeToggle<CR>
 imap <silent> <C-e> <Esc>;NERDTreeToggle<CR>
 cmap <silent> <C-e> <C-u>;NERDTreeToggle<CR>
-" let NERDTreeShowBookmarks=1
 
 "------------------------------------
 " NERD_commenter.vim
