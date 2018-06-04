@@ -3,5 +3,5 @@ noremap ; :
 noremap : ;
 
 " XMLを整形する
-command Formatxml :%s/></>\r</g | filetype indent on | setf xml | normal gg=G
+command! Formatxml :%s/></>\r</g | filetype indent on | setf xml | normal gg=G
 

@@ -81,7 +81,11 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Exit_OnlyWindow = 1
 map <silent> <leader>l :TlistToggle<CR>
 
-
+"------------------------------------
+" Vim-markdown
+"------------------------------------
+let g:vim_markdown_folding_disabled = 1
+" let g:vim_markdown_new_list_item_indent = 0
 "------------------------------------
 " Previm
 "------------------------------------
