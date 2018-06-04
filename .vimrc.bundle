@@ -21,7 +21,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Vimのプラグイン管理
-Plugin 'https//github.com/Shougo/neobundle.vim.git'
+Plugin 'Shougo/neobundle.vim'
 
 " Surround.vim
 Plugin 'tpope/vim-surround'
