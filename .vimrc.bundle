@@ -1,27 +1,13 @@
-" Vim起動時の処理
-"if has('vim_starting')
-"  " プラグインの自動読み込みOFF
-"  filetype plugin off
-"  " ファイルタイプ用のインデント設定自動読み込みOFF
-"  filetype indent off
-"  " runtimepathにneobundleを加える
-"  " execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
-"endif
-
-" NeoBundleの初期化
-" " call neobundle#rc(expand('~/.vim/bundle'))
-" call neobundle#begin(expand('~/.vim/bundle'))
-
+"プラグイン読み込み前なので以下の設定を一旦無効化
 set nocompatible
 filetype off
 
+" Set the runtimepath to include Vundle
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-
 " Vimのプラグイン管理
-Plugin 'Shougo/neobundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " Surround.vim
 Plugin 'tpope/vim-surround'
@@ -33,9 +19,7 @@ Plugin 'thinca/vim-quickrun'
 Plugin 'tyru/open-browser.vim'
 
 " ステータスラインをかっこ良くするプラグイン
-" Plugin 'Lokaltog/vim-powerline'
 Plugin 'itchyny/lightline.vim'
-
 
 " ツリー型エクスプローラ
 Plugin 'scrooloose/nerdtree.git'

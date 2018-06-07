@@ -1,4 +1,4 @@
-"Neobundleで管理してるpluginを読み込む
+"Pluginを読み込む
 source ~/dotfiles/.vimrc.bundle
 
 "基本設定
@@ -16,9 +16,6 @@ source ~/dotfiles/.vimrc.appearance
 "補完関連
 source ~/dotfiles/.vimrc.completion
 
-"Tags関連
-"source ~/dotfiles/.vimrc.tags
-"
 "検索関連
 source ~/dotfiles/.vimrc.search
 
@@ -39,7 +36,3 @@ source ~/dotfiles/.vimrc.misc
 
 "プラグイン依存
 source ~/dotfiles/.vimrc.plugins_setting
-
-"Vimでgitのログをきれいに表示する
-"  http://deris.hatenablog.jp/entry/2013/05/10/003430
-"source ~/dotfiles/.vimrc.gitlogviewer
