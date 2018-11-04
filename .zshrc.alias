@@ -15,3 +15,6 @@ alias git='nocorrect git'
 # grunt
 alias grunt='nocorrect grunt'
 
+# Jupyter Notebook
+alias jn='jupyter notebook'
+

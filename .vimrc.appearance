@@ -30,3 +30,5 @@ set ttyfast
 
 " Markdownでアンダーバーがあるとそれ以降が反転表示されるので無効化する
 autocmd FileType markdown hi! def link markdownitalic Normal
+" Jsonファイル編集時にカーソル行だけダブルクォート表示されるのを抑制
+autocmd FileType json setl conceallevel=0

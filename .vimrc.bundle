@@ -32,6 +32,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'tomlion/vim-solidity'
 
 " コメント処理
 Plugin 'scrooloose/nerdcommenter.git'
