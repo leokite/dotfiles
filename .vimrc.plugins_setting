@@ -10,8 +10,8 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_javascript_checkers = ['jshint'] "jshintを使う
 let g:syntastic_mode_map = {
-      \ 'mode': 'active',
-      \ 'active_filetypes': ['ruby',  'javascript'],
+      \ 'mode': 'passive',
+      \ 'active_filetypes': ['go', 'ruby',  'javascript'],
       \ 'passive_filetypes': ['html', 'python']
       \ }
 " AngularJSのためHTML警告を無視する. ng-以外も無視するならpassive_fileypesに
@@ -23,6 +23,8 @@ let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 " 可能ならハイライト表示する
 let g:syntastic_enable_highlighting=1
+" 保存時にgoでのコンパルチェックおよびgolintでのlintエラーチェック
+let g:syntastic_go_checkers = ['go', 'golint', 'govet']
 
 "----------------------------------------
 "" NERDTree
@@ -195,4 +197,9 @@ endif
 " Easy align interactive
 vmap <Enter> <plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+" vim-go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
 

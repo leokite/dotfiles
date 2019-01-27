@@ -1,5 +1,9 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
+# golang
+export GOPATH=$HOME/dev
+export PATH=$PATH:$GOPATH/bin
+
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:~/bin:$PATH
 
