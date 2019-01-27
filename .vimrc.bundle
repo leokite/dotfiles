@@ -80,6 +80,9 @@ Plugin 'junegunn/vim-easy-align'
 " カラーコードをその色でハイライト
 Plugin 'lilydjwg/colorizer'
 
+" Golang
+Plugin 'fatih/vim-go'
+
 " call neobundle#end()
 
 "プラグイン読み込み完了したので以下の設定を有効化
