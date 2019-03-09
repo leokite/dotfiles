@@ -1,7 +1,8 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # golang
-export GOPATH=$HOME/dev
+export GOROOT="/usr/local/Cellar/go/1.12/libexec"
+export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 
 # nodebrew
@@ -55,3 +56,17 @@ alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
 precmd() {
     echo -ne "\033]0;${USER}@${HOST}\007"
 }
+
+# Go peco
+bindkey '^]' peco-src
+
+function peco-src() {
+    local src=$(ghq list --full-path | peco --query "$LBUFFER")
+    if [ -n "$src" ]; then
+        BUFFER="cd $src"
+        zle accept-line
+    fi
+    zle -R -c
+}
+
+zle -N peco-src
