@@ -14,6 +14,6 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cd $HOME
 git clone https://github.com/rupa/z.git
 
-# install Neobundle
+# install Vundle
 mkdir -p ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
