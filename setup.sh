@@ -16,4 +16,4 @@ git clone https://github.com/rupa/z.git
 
 # install Neobundle
 mkdir -p ~/.vim/bundle
-git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
