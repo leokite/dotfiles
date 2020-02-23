@@ -1,24 +1,26 @@
-[user]
-	name = leokite
-	email = yuji.kazama.dev@gmail.com
+[includeIf "gitdir:~/work/"]
+  path = ~/.gitconfig-work
+[includeIf "gitdir:~/dotfiles/"]
+  path = ~/.gitconfig-private
+
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [color]
-	ui = true
+  ui = true
 [alias]
-	st = status
-	br = branch
-	co = checkout
-	ci = commit
+  st = status
+  br = branch
+  co = checkout
+  ci = commit
 [merge]
   ff = false
-[core]
-	excludesfile = /Users/kazamayuji/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[ghq]
-	root = /Users/ykazama/dev/go/src
+; [core]
+  ; excludesfile = /Users/kazamayuji/.gitignore_global
+; [difftool "sourcetree"]
+  ; cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  ; path =
+; [mergetool "sourcetree"]
+  ; cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  ; trustExitCode = true
+; [ghq]
+  ; root = /Users/ykazama/dev/go/src

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # synbolic link
-DOT_FILES=(.gitconfig .tmux.conf .vimrc .gvimrc .vrapperrc .zshrc .zshrc.custom .zshrc.alias .zshrc.osx .zshrc.linux)
+DOT_FILES=(.gitconfig .gitconfig-work .gitconfig-private .tmux.conf .vimrc .gvimrc .vrapperrc .zshrc .zshrc.custom .zshrc.alias .zshrc.osx .zshrc.linux)
 for file in ${DOT_FILES[@]}
 do
     ln -s $HOME/dotfiles/$file $HOME/$file
