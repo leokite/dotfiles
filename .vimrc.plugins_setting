@@ -207,4 +207,7 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
 
+" Auto save
+let g:auto_save = 1
+let g:auto_save_in_insert_mode = 0
 

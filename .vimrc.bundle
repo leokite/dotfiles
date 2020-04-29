@@ -85,6 +85,10 @@ Plugin 'fatih/vim-go'
 
 " call neobundle#end()
 
+" Auto save
+Plugin 'vim-scripts/vim-auto-save'
+
+
 "プラグイン読み込み完了したので以下の設定を有効化
 call vundle#end()
 syntax on
