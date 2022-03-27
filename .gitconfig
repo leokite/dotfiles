@@ -1,3 +1,4 @@
+; See ~/.ssh/config to change ssh key based on the account
 [includeIf "gitdir:~/work/"]
   path = ~/.gitconfig-work
 [includeIf "gitdir:~/dotfiles/"]
@@ -16,21 +17,3 @@
   ci = commit
 [merge]
   ff = false
-; [core]
-  ; excludesfile = /Users/kazamayuji/.gitignore_global
-; [difftool "sourcetree"]
-  ; cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  ; path =
-; [mergetool "sourcetree"]
-  ; cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  ; trustExitCode = true
-; [ghq]
-  ; root = /Users/ykazama/dev/go/src
-; [url "https://yuji-kazama:be537f45cd75cee2638fd418c867b1d28156e48d@github.com"]
-  ; insteadOf = https://github.com
-; [commit]
-  ; gpgsign = true
-; [gpg]
-  ; program = gpg
-; [user]
-  ; signingkey = D9621AF0F5B22B7F
