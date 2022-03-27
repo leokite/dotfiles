@@ -49,8 +49,3 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 source $HOME/.zshrc.custom
 
-# The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/Users/ykazama/dev/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ykazama/dev/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-# if [ -f '/Users/ykazama/dev/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ykazama/dev/google-cloud-sdk/completion.zsh.inc'; fi

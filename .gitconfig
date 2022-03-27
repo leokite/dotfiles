@@ -2,6 +2,8 @@
   path = ~/.gitconfig-work
 [includeIf "gitdir:~/dotfiles/"]
   path = ~/.gitconfig-private
+[includeIf "gitdir:~/dev/"]
+  path = ~/.gitconfig-private
 
 [credential]
   helper = osxkeychain
