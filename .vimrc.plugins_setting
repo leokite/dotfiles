@@ -86,6 +86,7 @@ map <silent> <leader>l :TlistToggle<CR>
 "------------------------------------
 " Vim-markdown
 "------------------------------------
+let g:vim_markdown_conceal = 0
 let g:vim_markdown_folding_disabled = 1
 " let g:vim_markdown_new_list_item_indent = 0
 "------------------------------------
@@ -146,7 +147,7 @@ let g:acp_enableAtStartup = 0
 let g:neocomplcache_enable_at_startup = 1
 " 補完が自動で開始される文字数
 let g:neocomplcache_auto_completion_start_length = 3
-" smarrt case有効化。 大文字が入力されるまで大文字小文字の区別を無視する
+
 let g:neocomplcache_enable_smart_case = 1
 " camle caseを有効化。大文字を区切りとしたワイルドカードのように振る舞う
 let g:neocomplcache_enable_camel_case_completion = 1
@@ -207,4 +208,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
 
-
+" Auto save
+let g:auto_save = 1
+let g:auto_save_in_insert_mode = 0

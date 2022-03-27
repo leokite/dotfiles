@@ -1,3 +1,10 @@
 [user]
   email = yuji.kazama.dev@gmail.com
   name = leokite
+
+[commit]
+  gpgsign = true
+[gpg]
+  program = gpg
+[user]
+  signingkey = C0B85609A355BCC1
